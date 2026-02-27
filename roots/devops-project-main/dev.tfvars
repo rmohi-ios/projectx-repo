@@ -8,3 +8,9 @@ public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 private_subnet_cidrs = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
 environment          = "dev"
 
+ec2_types        = ["t3.medium", "t3a.medium", "t2.medium"]
+k8s_version      = "1.34"
+min_size         = 1
+max_size         = 6
+desired_capacity = 4
+enable_addons    = true
