@@ -12,5 +12,10 @@ ec2_types        = ["t3.medium", "t3a.medium", "t2.medium"]
 k8s_version      = "1.34"
 min_size         = 1
 max_size         = 6
-desired_capacity = 4
+desired_capacity = 3
 enable_addons    = true
+
+# Grafana configs
+grafana_admin_username      = "admin"
+grafana_namespace           = "monitoring"
+grafana_serviceaccount_name = "grafana-sa"
