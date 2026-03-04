@@ -19,3 +19,13 @@ enable_addons    = true
 grafana_admin_username      = "admin"
 grafana_namespace           = "monitoring"
 grafana_serviceaccount_name = "grafana-sa"
+
+#DocumentDb (mongodb) configs
+master_username         = "proshop_admin"
+name_prefix             = "proshop"
+mongo_db_instance_class = "db.t3.medium"
+instance_count          = 1
+tags_proshop = {
+  Project     = "proshop"
+  Environment = "dev"
+}
