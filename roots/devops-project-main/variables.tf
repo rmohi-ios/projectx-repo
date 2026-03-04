@@ -116,3 +116,22 @@ variable "grafana_serviceaccount_name" {
   description = "Grafana ServiceAccount name (must match Helm chart SA)"
   default     = "grafana-sa"
 }
+
+# DocumentDB Module Variables
+variable "name_prefix" {
+  type = string
+}
+variable "mongo_db_instance_class" {
+  type = string
+}
+variable "tags_proshop" {
+  type = map(string)
+}
+variable "master_username" {
+  type = string
+}
+
+variable "instance_count" {
+  type = number
+}
+
